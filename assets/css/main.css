@@ -5,3 +5,20 @@
 .bg-primary {
   background-color: #5bc4bd;
 }
+
+.banner-title {
+  font-size: 72px;
+}
+
+.about-us--subtext {
+  font-family: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .banner-title {
+    font-size: 48px;
+  }
+  .banner-subtitle {
+    font-size: 32px;
+  }
+}
