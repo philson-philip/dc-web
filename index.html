@@ -11,8 +11,16 @@
     <link rel="icon" href="favicon.ico" />
     <link href="./assets/css/tailwind.css" rel="stylesheet" />
     <link href="./assets/css/main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+        easing: "easeInOutCubic",
+      });
+    </script>
     <div class="">
       <div class="relative bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto">
@@ -1220,6 +1228,7 @@
             <div class="px-5 py-2">
               <a
                 href="#about"
+                data-scroll
                 class="text-base text-gray-600 hover:text-gray-900"
               >
                 About
@@ -1229,6 +1238,7 @@
             <div class="px-5 py-2">
               <a
                 href="#services"
+                data-scroll
                 class="text-base text-gray-600 hover:text-gray-900"
               >
                 Services
@@ -1238,6 +1248,7 @@
             <div class="px-5 py-2">
               <a
                 href="#contact"
+                data-scroll
                 class="text-base text-gray-600 hover:text-gray-900"
               >
                 Contact
@@ -1292,10 +1303,24 @@
             </a>
           </div>
           <p class="mt-8 text-center text-base text-gray-400">
-            &copy; 2021 DC Business Consultancy. All rights reserved.
+            <span>&copy; 2021 DC Business Consultancy.</span
+            ><br class="block sm:hidden" />
+            <span>Designed and Developed by</span>
+            <a
+              class="text-primary cursor-pointer font-medium"
+              href="https://philson-philip.github.io/"
+              target="_blank"
+              >Philson Philip</a
+            >.
           </p>
         </div>
       </footer>
+      <!-- <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script> -->
     </div>
   </body>
 </html>
